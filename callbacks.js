@@ -6,10 +6,6 @@ function forEach(array, callback){
 
 var students = ['Tom', 'Jill', 'Jan'];
 
-forEach(students, function(name){
-	console.log(name, "was here");
-});
-
 function makeSquared(number){
 	return function(){
 		return number * number;
@@ -22,7 +18,6 @@ function makePower(power){
 	}
 }
 
-nineSquared = function(){9*9}
 var nineSquared = makeSquared(9);
 var twelveSquared = makeSquared(12);
 
@@ -34,4 +29,7 @@ console.log("Nine squared is", squared(9) );2
 console.log("Twelve cubed is", cubed(12) );
 console.log("Five forthed is", forthed(5) );
 
+forEach(students, function(name){
+	console.log(name, "was here");
+});
 
